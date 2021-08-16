@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>&#x1F525 OH Report Card &#x1F525</title>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+</head>
+
+<body style="margin: 0px; background-color: #a0a0a0;">
+
+  <div id="headerbar" style="height: 40px;">
+    Ontario Health Reporting Portal (simulated).<br>
+    Context passing: Robo Duncan</br>
+  </div>
+
+  <iframe src="rcsearch.html" height=500 style="border: 0px; margin: 10px;" id="frame"></iframe>
+
+  <script>
+    function getWidth() {
+      return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
+      );
+    }
+    function getHeight() {
+      return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.documentElement.clientHeight
+      );
+    }
+    document.getElementById("frame").style.width = getWidth() - 20 + "px";
+    document.getElementById("frame").style.height = getHeight() - 60 + "px";
+
+  </script>
+
+</body>
+
+</html>
